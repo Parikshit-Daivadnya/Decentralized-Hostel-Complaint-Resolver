@@ -1,10 +1,30 @@
-HELP.md
-target/
+# Created by combining local and remote versions
+
+### Build & Dependencies ###
+.gradle/
 .mvn/wrapper/maven-wrapper.jar
+build/
+dist/
+target/
+out/
+node_modules/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### STS ###
+### Compiled Output ###
+*.class
+*.jar
+*.war
+*.ear
+
+### IDE Specific ###
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# STS
 .apt_generated
 .classpath
 .factorypath
@@ -13,21 +33,36 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+# VS Code
+.vscode/
 
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+### OS Specific ###
+.DS_Store
+Thumbs.db
+
+### Logs & Temp Files ###
+*.log
+*.tmp
+*.bak
+*.swp
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+### Environment/Config Files ###
+.env
+.env.local
+.env.development
+.env.production
+
+### Other ###
+HELP.md
+*.sql
+*.sql.gz
